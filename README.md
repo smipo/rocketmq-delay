@@ -5,9 +5,7 @@
 下载RocketMQ4.7.1二进制包,将新加的jar包添加到lib目录下,在将本项目的store项目maven打包替换掉原有的store jar.按原有启动方式启动。   
 
 二.配置  
-在rocketmq broker配置基础上添加延时队列文件根路径delayPathDir,不配置此参数,默认工作空间/data文件下存储,如:  
-delayPathDir=C:\\rocketmq\\delay
-在delayPathDir文件目录下需存在delay.properties文件,若不配置或者delay.properties文件不存在,则全为默认参数,delay.properties参数如：  
+在rocketmq broker配置基础上添加延时队列文件根路径delayPathDir,不配置此参数,默认工作空间/data文件下存储,在delayPathDir文件目录下需存在delay.properties文件,若不配置或者delay.properties文件不存在,则全为默认参数,delay.properties参数如：  
 store.root=文件存储目录,默认工作空间/data目录下  
 log.expired.delete.enable=是否删除存储文件,true 删除 false不删除 默认false  
 log.retention.check.interval.seconds=多少秒执行一次删除操作,默认60秒  
