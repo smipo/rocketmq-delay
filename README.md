@@ -4,7 +4,7 @@
 新添加了jar,分别是:jackson-annotations-2.9.9.jar jackson-databind-2.9.9.jar jackson-core-2.9.9.jar joda-time-2.9.9.jar
 下载RocketMQ4.7.1二进制包,将新加的jar包添加到lib目录下,在将本项目的store项目maven打包替换掉原有的store jar.按原有启动方式启动。   
 
-二.配置
+二.配置  
 在rocketmq broker配置基础上添加延时队列文件根路径delayPathDir,不配置此参数,默认工作空间/data文件下存储,如:  
 delayPathDir=C:\\rocketmq\\delay
 在delayPathDir文件目录下需存在delay.properties文件,若不配置或者delay.properties文件不存在,则全为默认参数,delay.properties参数如：  
